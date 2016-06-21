@@ -112,7 +112,7 @@ module.exports = function(options){
         }),
         output: {
             path: path.join(__dirname, "dist"),
-            filename: "[name].js",
+            filename: "js/[name].js",
             chunkFilename: '[chunkhash:8].chunk.js',
             publicPath: publicPath
         },
