@@ -14,6 +14,10 @@
     $ cd webpack-avalon
 	$ npm install
 
+## 开发要求 ##
+
+约定/src/*.html为应用的入口文件，在/src/js/ 一级目录下需有一个同名的js文件作为该文件的入口。
+
 ## 编译（测试/dev环境） ##
 
     $ npm run build
@@ -36,7 +40,9 @@
 
     $ npm run deployP
 
-## 开发要求 ##
+## 本地调试 ##
 
-约定/src/*.html为应用的入口文件，在/src/js/ 一级目录下需要一个同名的js文件作为该文件的入口。
-
+    $ npm run server
+    # 或者 下面两种模式
+    $ webpack-dev-server
+    $ webpack-dev-server --inline
