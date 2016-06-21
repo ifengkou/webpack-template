@@ -1,0 +1,8 @@
+.webpack {
+     background: url(../img/webpack.png) no-repeat center;
+     height:500px;
+ }
+.small-webpack {
+    background: url(../img/small-webpack.png) no-repeat center;
+    height:250px;
+}

@@ -1,0 +1,15 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, input, button, textarea, section {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    -webkit-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+}
+body, input, button, textarea {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    font-size: 0.28rem;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,32 @@
+config.js
+.cov
+coverage
+node_modules
+bower_components
+npm-debug.log
+.naeindex
+coverage.html
+.monitor
+
+dist/
+*.min.*.js
+*.min.*.css
+assets.json
+
+# Ignore Mac OS desktop services store
+.DS_Store
+
+# Ignore Windows desktop setting file
+desktop.ini
+
+*.log
+*.csv
+*.dat
+*.out
+
+.idea/
+public/upload/*
+
+*.sublime-project
+*.sublime-workspace
+*.swp

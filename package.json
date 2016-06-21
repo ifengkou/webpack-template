@@ -1,0 +1,37 @@
+{
+  "name": "webpack-avalon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp pack --env debug",
+    "buildP": "gulp pack --env production",
+    "deploy": "gulp deploy --env debug",
+    "deployP": "gulp deploy --env production"
+  },
+  "author": "sloong",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.21.0",
+    "ejs-loader": "^0.3.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sftp": "^0.1.5",
+    "gulp-util": "^3.0.7",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.19.0",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "jsx-loader": "^0.13.2",
+    "minimist": "^1.2.0",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
