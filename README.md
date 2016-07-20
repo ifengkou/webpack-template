@@ -13,11 +13,11 @@
 
 ## 拷贝项目模板 ##
 
-    $ git clone https://github.com/ifengkou/webpack-avalon.git
+    $ git clone https://github.com/ifengkou/webpack-template.git
 
 ## 安装依赖 ##
 
-    $ cd webpack-avalon
+    $ cd webpack-template
 	$ npm install
 
 ## 目录结构 ##
