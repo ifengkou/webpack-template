@@ -33,7 +33,7 @@
 
 ## 目录结构 ##
 
-    ``` js
+``` js
     .
     ├── config.rb                 # compass配置
     ├── gulpfile.js               # gulp任务配置
@@ -58,7 +58,7 @@
     ├── webpack.config.allinone.js    # webpack配置
     ├── webpack.config.js         # 正式环境webpack配置入口
     └── webpack-dev.config.js     # 开发环境webpack配置入口
-    ```
+```
 
 ## 开发要求 ##
 
