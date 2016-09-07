@@ -95,7 +95,7 @@
 
 ## Jenkins 持续集成 ##
 
-    需要nodejs
+    //需要nodejs
     $ npm run buildP
     $ npm run deployP
 
