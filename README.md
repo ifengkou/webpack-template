@@ -72,7 +72,7 @@
 
 生产环境会对js混淆压缩，对css、html进行压缩，字符替换等处理
 
-    $ npm run buildP
+    $ npm run build-online
 
 ## 部署发布 ##
 
@@ -95,7 +95,7 @@
 
 ## Jenkins 持续集成 ##
 
-jenkins服务器需要nodejs
+jenkins服务器需要nodejs,配置下面的脚本
 
     $ npm run build-online
     $ npm run deploy-online
