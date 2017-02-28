@@ -73,7 +73,7 @@
 
 发布到remoteServer
 
-    $ npm run deployP
+    $ npm run deploy-online
 
 ## 本地调试 ##
 
@@ -84,9 +84,10 @@
 
 ## Jenkins 持续集成 ##
 
-    需要nodejs
-    $ npm run buildP
-    $ npm run deployP
+jenkins服务器需要nodejs
+
+    $ npm run build-online
+    $ npm run deploy-online
 
 
 

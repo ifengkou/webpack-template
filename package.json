@@ -1,14 +1,14 @@
 {
-  "name": "webpack-avalon",
+  "name": "webpack-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "server": "webpack-dev-server --inline",
     "build": "gulp pack --env debug",
-    "buildP": "gulp pack --env production",
+    "build-online": "gulp pack --env production",
     "deploy": "gulp deploy --env debug",
-    "deployP": "gulp deploy --env production"
+    "deploy-online": "gulp deploy --env production"
   },
   "author": "sloong",
   "license": "MIT",
