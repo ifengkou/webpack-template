@@ -59,6 +59,9 @@ gulp.task('clean', ['hint'], function () {
 //run webpack pack
 gulp.task('pack', ['clean'], function (done) {
     var _conf = options.env === 'production' ? webpackConf : webpackConfDev;
+/*    console.log('--------------------------------------');
+    console.log(options.env);
+    console.log('-------------------------------------');*/
     webpack(_conf, function (err, stats) {
         if (err) throw new gutil.PluginError('webpack', err)
         gutil.log('[webpack]', stats.toString({colors: true}))
