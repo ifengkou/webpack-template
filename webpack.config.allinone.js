@@ -19,7 +19,7 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
-
+var CleanPlugin = require('clean-webpack-plugin');//清除一个文件夹下的文件
 //入口文件定义
 var entries = function () {
     var jsDir = path.resolve(srcDir, 'js')
@@ -57,10 +57,12 @@ var html_plugins = function () {
     return r
 }
 
-module.exports = function(options){
+module.exports = function (options) {
     options = options || {}
-    var debug = options.debug !==undefined ? options.debug :true;
-
+    var debug = options.debug !== undefined ? options.debug : true;
+    /*     console.log('--------------------------------------');
+     console.log(debug);
+     console.log('-------------------------------------');*/
     var plugins = [];
 
     var extractCSS;
@@ -70,15 +72,14 @@ module.exports = function(options){
     plugins.push(new CommonsChunkPlugin({
         name: 'vendor',
         minChunks: Infinity
-    }));
+    }), new CleanPlugin('dist'));
 
-    if(debug){
+    if (debug) {
         extractCSS = new ExtractTextPlugin('css/[name].css?[contenthash]')
         cssLoader = extractCSS.extract(['css'])
         sassLoader = extractCSS.extract(['css', 'sass'])
-
-        plugins.push(extractCSS)
-    }else{
+        plugins.push(extractCSS);
+    } else {
         extractCSS = new ExtractTextPlugin('css/[contenthash:8].[name].min.css', {
             // 当allChunks指定为false时，css loader必须指定怎么处理
             allChunks: false
@@ -96,7 +97,7 @@ module.exports = function(options){
                     comments: false
                 },
                 mangle: {
-                    except: ['$', 'exports', 'require','avalon']
+                    except: ['$', 'exports', 'require', 'avalon']
                 }
             }),
             new webpack.optimize.DedupePlugin(),
@@ -112,7 +113,7 @@ module.exports = function(options){
         }),
         output: {
             path: path.join(__dirname, "dist"),
-            filename: "js/[name].js",
+            filename: "js/[name]-[hash].js",
             chunkFilename: '[chunkhash:8].chunk.js',
             publicPath: publicPath
         },

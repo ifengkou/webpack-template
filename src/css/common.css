@@ -10,6 +10,8 @@ html, body {
 body, input, button, textarea {
     font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     font-size: 0.28rem;
+    font-size: 2rem;
+    color:red;
     border: none;
     outline: none;
 }
